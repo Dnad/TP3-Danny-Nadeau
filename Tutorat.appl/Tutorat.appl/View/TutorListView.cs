@@ -21,6 +21,7 @@ namespace Tutorat.appl.View
             foreach (TutorListVM tutorListVM in tutorList)
             {
                 Console.WriteLine(tutorListVM.ToString());
+                Console.WriteLine("");
             }
         }
 

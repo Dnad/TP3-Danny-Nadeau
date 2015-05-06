@@ -21,6 +21,7 @@ namespace Tutorat.appl.View
             foreach (HelpedListVM helpedListVM in helpedList)
             {
                 Console.WriteLine(helpedListVM.ToString());
+                Console.WriteLine("");
             }
         }
     }

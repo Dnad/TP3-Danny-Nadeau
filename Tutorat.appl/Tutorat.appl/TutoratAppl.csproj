@@ -61,10 +61,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\HelpedListVM.cs" />
+    <Compile Include="ViewModel\ListWhenNextTutoringSessionVM.cs" />
     <Compile Include="ViewModel\SessionListVM.cs" />
     <Compile Include="ViewModel\TutorListVM.cs" />
     <Compile Include="ViewModel\WorkingHoursTutorListVM.cs" />
     <Compile Include="View\HelpedListView.cs" />
+    <Compile Include="View\ListWhenNextTutoringSessionView.cs" />
     <Compile Include="View\SessionListView.cs" />
     <Compile Include="View\TutorListView.cs" />
     <Compile Include="View\WorkingHoursTutorListView.cs" />

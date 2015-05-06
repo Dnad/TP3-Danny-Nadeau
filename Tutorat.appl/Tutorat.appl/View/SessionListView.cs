@@ -21,6 +21,7 @@ namespace Tutorat.appl.View
             foreach (SessionListVM sessionListVM in sessionList)
             {
                 Console.WriteLine(sessionListVM.ToString());
+                Console.WriteLine("");
             }
         }
     }

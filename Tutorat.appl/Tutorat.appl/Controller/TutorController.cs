@@ -64,12 +64,12 @@ namespace Tutorat.appl.Controller
         {
             var tutorList = _tutorRepository.GetAll().ToList<Tutor>();
             var tutorVM = new List<TutorListVM>();
-            var sessionVM = new List<SessionListVM>();
+            var listWhenNextTutoringSessionVM = new List<ListWhenNextTutoringSessionVM>();
 
             foreach (var tutor in tutorList)
             {
                 tutorVM.Clear();
-                sessionVM.Clear();
+                listWhenNextTutoringSessionVM.Clear();
 
                 tutorVM.Add(new TutorListVM()
                 {
@@ -81,7 +81,7 @@ namespace Tutorat.appl.Controller
                 {
                     if (session.DateTimeSession > DateTime.Now)
                     {
-                        sessionVM.Add(new SessionListVM()
+                        listWhenNextTutoringSessionVM.Add(new ListWhenNextTutoringSessionVM()
                         {
                             HelpedFirstName = session.Helped.FirstName,
                             DateTimeSession = session.DateTimeSession,
@@ -90,11 +90,13 @@ namespace Tutorat.appl.Controller
                         });
                     }
                 }
-                new TutorListView(tutorVM).Display();
+                
 
-                if (sessionVM.Count != 0)
+                if (listWhenNextTutoringSessionVM.Count != 0)
                 {
-                    new SessionListView(sessionVM).Display();
+                    listWhenNextTutoringSessionVM.OrderBy(Tutor => Tutor.HelpedLastName).ThenBy(TutoringSession => TutoringSession.DateTimeSession);
+                    new TutorListView(tutorVM).Display();
+                    new ListWhenNextTutoringSessionView(listWhenNextTutoringSessionVM).Display();
                 }
             }
         }
