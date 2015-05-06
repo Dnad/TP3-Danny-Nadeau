@@ -7,22 +7,21 @@ using Tutorat.appl.ViewModel;
 
 namespace Tutorat.appl.View
 {
-    class TutorListView
+    class WorkingHoursTutorListView
     {
-        private IEnumerable<TutorListVM> tutorList;
+         private readonly IEnumerable<WorkingHoursTutorListVM> tutorList;
 
-        public TutorListView(IEnumerable<TutorListVM> _tutorList)
+         public WorkingHoursTutorListView(IEnumerable<WorkingHoursTutorListVM> _tutorList)
         {
             tutorList = _tutorList;
         }
 
         public void Display()
         {
-            foreach (TutorListVM tutorListVM in tutorList)
+            foreach (var tutor in tutorList)
             {
-                Console.WriteLine(tutorListVM.ToString());
+                Console.WriteLine(tutor.ToString());
             }
         }
-
     }
 }

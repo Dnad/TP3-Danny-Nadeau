@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tutorat.appl.View;
+using Tutorat.appl.ViewModel;
 
 namespace Tutorat.appl.Controller
 {
@@ -17,14 +19,42 @@ namespace Tutorat.appl.Controller
         {
             _helpedRepository = _repository;
         }
-        void ListAll()
+        public void ListAll()
         {
+            var helpedList = _helpedRepository.GetAll().ToList<HelpedStudent>();
+            var helpedVM = new List<HelpedListVM>();
 
+            foreach (HelpedStudent helpedStudent in helpedList)
+            {
+                helpedVM.Add(new HelpedListVM()
+                {
+                    Id = helpedStudent.Id,
+                    FirstName = helpedStudent.FirstName,
+                    LastName = helpedStudent.LastName,
+                    EmailAddress = helpedStudent.EmailAddress
+                });
+            }
+            new HelpedListView(helpedVM).Display();
         }
 
-        void ListWhenWithoutTutoringSession()
+        public void ListWhenWithoutTutoringSession()
         {
+            var helpedList = _helpedRepository.GetAll().ToList<HelpedStudent>();
+            var helpedVM = new List<HelpedListVM>();
 
+            foreach (HelpedStudent helpedStudent in helpedList)
+            {
+                if (helpedStudent.Session.Count == 0)
+                {
+                    helpedVM.Add(new HelpedListVM()
+                    {
+                        FirstName = helpedStudent.FirstName,
+                        LastName = helpedStudent.LastName,
+                        EmailAddress = helpedStudent.EmailAddress
+                    });
+                }
+            }
+            new HelpedListView(helpedVM).Display();
         }
     }
 }
