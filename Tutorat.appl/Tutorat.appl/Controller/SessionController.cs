@@ -29,12 +29,10 @@ namespace Tutorat.appl.Controller
                 sessionsVM.Add(new SessionListVM()
                 {
                     DateTimeSession = tutoringSession.DateTimeSession,
-                    Time = tutoringSession.Time,
                     HelpedFirstName = tutoringSession.Helped.FirstName,
                     HelpedLastName = tutoringSession.Helped.LastName,
-                    Id = tutoringSession.Id,
                     LengthSession = tutoringSession.LengthSession,
-                    TutorFirstName = tutoringSession.Tutor.FirstName,
+                    TutorFirstName =tutoringSession.Tutor.FirstName,
                     TutorLastName = tutoringSession.Tutor.LastName
                 });
             }

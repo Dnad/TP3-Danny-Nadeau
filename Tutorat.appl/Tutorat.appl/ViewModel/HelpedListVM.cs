@@ -11,11 +11,10 @@ namespace Tutorat.appl.ViewModel
         public string LastName { get; set; }
         public string FirstName { get; set; }
         public string EmailAddress { get; set; }
-        public int Id { get; set; }
 
        public override string ToString()
         {
-             return Id.ToString() + "= " + LastName + ", " + FirstName + ", " + EmailAddress;
+             return LastName + ", " + FirstName + ", " + EmailAddress;
         }
     }
 }

@@ -30,7 +30,6 @@ namespace Tutorat.appl.Controller
                 {
                     EmailAddress = tutor.EmailAddress,
                     FirstName = tutor.FirstName,
-                    Id = tutor.Id,
                     LastName = tutor.LastName
                 });
             }
@@ -121,7 +120,6 @@ namespace Tutorat.appl.Controller
                     {
                         EmailAddress = tutor.EmailAddress,
                         FirstName = tutor.FirstName,
-                        Id = tutor.Id,
                         LastName = tutor.LastName
                     });
                 }

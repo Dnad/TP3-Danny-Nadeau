@@ -28,7 +28,6 @@ namespace Tutorat.appl.Controller
             {
                 helpedVM.Add(new HelpedListVM()
                 {
-                    Id = helpedStudent.Id,
                     FirstName = helpedStudent.FirstName,
                     LastName = helpedStudent.LastName,
                     EmailAddress = helpedStudent.EmailAddress

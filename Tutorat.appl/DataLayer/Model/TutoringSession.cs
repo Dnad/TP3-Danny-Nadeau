@@ -10,12 +10,10 @@ namespace DataLayer.Model
     {
         public DateTime DateTimeSession { get; set; }
         public int LengthSession { get; set; }
-
-        public int Time { get; set; }
         //cles etrangeres
         public int TutorID { get; set; }
         public int HelpedStudentID { get; set; }
-        public HelpedStudent Helped { get; set; }
-        public Tutor Tutor { get; set; }
+        public virtual HelpedStudent Helped { get; set; }
+        public virtual Tutor Tutor { get; set; }
     }
 }

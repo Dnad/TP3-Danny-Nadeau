@@ -2,6 +2,7 @@
 using DataLayer.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,7 @@ namespace TutoratAppl
     {
         static void Main(string[] args)
         {
+            
             EfDataBaseTestHelper _dataBaseHelper = new EfDataBaseTestHelper();
             _dataBaseHelper.creationSeedTable();
             var tutorController = new TutorController(new EfEntityRepository<Tutor>());

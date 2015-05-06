@@ -13,13 +13,12 @@ namespace Tutorat.appl.ViewModel
         public int Time { get; set; }
         public string HelpedFirstName { get; set; }
         public string HelpedLastName { get; set; }
-        public int Id { get; set; }
         public int LengthSession { get; set; }
         public string TutorFirstName { get; set; }
         public string TutorLastName { get; set; }
         public override string ToString()
         {
-            return Id.ToString() + "= " + DateTimeSession + ", " + LengthSession + ", " + HelpedFirstName + ", " + HelpedLastName + ", " + TutorFirstName + ", " + TutorLastName;
+            return DateTimeSession + ", " + LengthSession + ", " + HelpedFirstName + ", " + HelpedLastName + ", " + TutorFirstName + ", " + TutorLastName;
         }
     }
 }
