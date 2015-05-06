@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.EfEntityFramework
 {
-    class EfDataBaseTestHelper
+    public class EfDataBaseTestHelper
     {
         private EfEntityRepository<Tutor> _tutorRepository;
         private EfEntityRepository<HelpedStudent> _helpedStudentRepository;

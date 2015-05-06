@@ -10,6 +10,7 @@ namespace Tutorat.appl.ViewModel
     class SessionListVM
     {
         public DateTime DateTimeSession { get; set; }
+        public int Time { get; set; }
         public string HelpedFirstName { get; set; }
         public string HelpedLastName { get; set; }
         public int Id { get; set; }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.EfEntityFramework
 {
-    class EfEntityRepository<T>:IEntityRepository<T> where T:Entity
+    public class EfEntityRepository<T>:IEntityRepository<T> where T:Entity
     {
         private readonly DbContext _context;
 

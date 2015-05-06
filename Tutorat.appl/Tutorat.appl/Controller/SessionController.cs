@@ -29,6 +29,7 @@ namespace Tutorat.appl.Controller
                 sessionsVM.Add(new SessionListVM()
                 {
                     DateTimeSession = tutoringSession.DateTimeSession,
+                    Time = tutoringSession.Time,
                     HelpedFirstName = tutoringSession.Helped.FirstName,
                     HelpedLastName = tutoringSession.Helped.LastName,
                     Id = tutoringSession.Id,
