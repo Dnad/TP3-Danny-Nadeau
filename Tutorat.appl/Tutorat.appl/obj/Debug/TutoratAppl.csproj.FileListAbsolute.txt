@@ -1,0 +1,15 @@
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\Tutorat.appl.exe.config
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\Tutorat.appl.exe
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\Tutorat.appl.pdb
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\DataLayer.exe
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\EntityFramework.dll
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\DataLayer.pdb
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\EntityFramework.xml
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\bin\Debug\EntityFramework.SqlServerCompact.xml
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\obj\Debug\TutoratAppl.csprojResolveAssemblyReference.cache
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\obj\Debug\Tutorat.appl.exe
+C:\Users\Danny\Desktop\TP3-Danny-Nadeau\Tutorat.appl\Tutorat.appl\obj\Debug\Tutorat.appl.pdb

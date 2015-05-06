@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Model
 {
-    class TutoringSession:Entity
+    public class TutoringSession:Entity
     {
         public DateTime DateTimeSession { get; set; }
         public int LengthSession { get; set; }
